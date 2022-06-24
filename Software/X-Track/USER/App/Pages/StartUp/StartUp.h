@@ -1,8 +1,8 @@
 #ifndef __STARTUP_PRESENTER_H
 #define __STARTUP_PRESENTER_H
 
-#include "StartupView.h"
-#include "StartupModel.h"
+#include "StartUpView.h"
+#include "StartUpModel.h"
 
 namespace Page
 {
@@ -22,6 +22,7 @@ public:
     virtual void onViewDidAppear();
     virtual void onViewWillDisappear();
     virtual void onViewDidDisappear();
+    virtual void onViewUnload();
     virtual void onViewDidUnload();
 
 private:

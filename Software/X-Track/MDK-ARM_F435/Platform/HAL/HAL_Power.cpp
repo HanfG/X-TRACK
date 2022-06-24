@@ -11,8 +11,7 @@ static BQ27220 fuel_gauge;
 #define BATT_MAX_VOLTAGE            4200
 #define BATT_FULL_CHARGE_VOLTAGE    4100
 
-#define BATT_CHG_DET_PULLUP         1
-#if BATT_CHG_DET_PULLUP
+#if CONFIG_POWER_BATT_CHG_DET_PULLUP
 #  define BATT_CHG_DET_PIN_MODE     INPUT_PULLUP
 #  define BATT_CHG_DET_STATUS       (!digitalRead(CONFIG_BAT_CHG_DET_PIN))
 #else
