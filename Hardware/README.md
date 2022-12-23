@@ -41,7 +41,7 @@
 > 地图不显示
 * 在首次定位成功前，默认加载的地图区域是北京，等待定位成功或者修改**SystemSave.json**里的经纬度配置
 * 检查状态栏是否有SD卡图标
-* 检查地图文件路径
+* 检查地图文件路径是否为`/MAP/z/x/y.bin`
 * **不要使用旧版地图工具**
 
 > 不开机 & 关不了机
@@ -68,9 +68,11 @@
 * 检查GPS天线朝向，参考第一点
 * 更换GPS模块
 
-> 在PC模拟器上无法显示地图
+> PC模拟器上无法显示地图/显示颜色异常
 * MAP地图文件夹放在X-TRACK工程的根目录`~/X-TRACK/MAP/`
 * 修改**SystemSave.json**里的经纬度配置到希望显示地图的地方
+* 确认生成的地图文件命名格式为`/z/x/y.png`
+* 修改**SystemSave.json**的`"sysConfig.mapExtName"`项目，将`"bin"`改为`"png"`
 
 ## 2.0寸屏版本
 https://github.com/FASTSHIFT/X-TRACK/tree/2.0-inch by[@HanfG](https://github.com/HanfG)
